@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="form.html">Register</a>
+    </p>
+
+    <form action="thanks.html" method="get">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="regno">Registration No:</label>
+        <input type="text" id="regno" name="regno" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="03XXXXXXXXX">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="16" max="40">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        Gender:
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="dept">Department:</label>
+        <select id="dept" name="department">
+            <option>AI</option>
+            <option>CS</option>
+            <option>SE</option>
+            <option>EE</option>
+        </select>
+        <br><br>
+
+        Interests:
+        <input type="checkbox" id="web" name="interest" value="Web">
+        <label for="web">Web</label>
+
+        <input type="checkbox" id="ai" name="interest" value="AI">
+        <label for="ai">AI</label>
+
+        <input type="checkbox" id="games" name="interest" value="Games">
+        <label for="games">Games</label>
+        <br><br>
+
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="address" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+</body>
+</html>
